@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -9,9 +8,10 @@
     <meta name="keywords" content="cybersecurity FAQ, NextGen Cyber questions, workshops booking, learn cyber skills South Africa, online cyber training, beginner cybersecurity, mentorship FAQ">
     <meta name="author" content="MKM">
 
-    <title>NextGen Cyber Skills Hub - Mentors</title>
+    <title>NextGen Cyber Skills Hub - FAQ</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- MAIN STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet"
@@ -20,85 +20,205 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://yourdomain.com/html/FAQ.html">
 
-
-
     <style>
+
         /* =========================
-           GENERAL
+            GENERAL
         ========================= */
 
         body {
-            margin: 0;
-            background: #000;
-            color: #fff;
+            background-color: #000;
+            color: aliceblue;
             font-family: Arial, Helvetica, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        /* =========================
-           NAVBAR
-        ========================= */
-
-        .navbar {
-            display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            align-items: center;
-            gap: 25px;
-            padding: 18px 5%;
-            position: relative;
-            background: #000;
-            border-bottom: 2px solid #009DFF;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-            padding: 0;
             margin: 0;
+            text-align: center;
+        }
+
+        .navbar li {
             list-style: none;
         }
 
-        .nav-left {
-            justify-content: flex-end;
+        /* =========================
+            FAQ HEADER
+        ========================= */
+
+        .faq-header {
+            padding: 50px 20px 20px;
         }
 
-        .nav-right {
-            justify-content: flex-start;
+        .faq-header h1 {
+            color: #009dff;
+            font-size: 42px;
+            font-family: "RobotRocket", sans-serif;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
         }
 
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
+        .faq-header p {
+            color: #ccc;
+            font-size: 17px;
+            line-height: 1.6;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .faq-intro {
+            color: #aaa;
             font-size: 15px;
-            white-space: nowrap;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover,
-        .nav-links a.active {
-            color: #009DFF;
-        }
-
-        .logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .logo img {
-            display: block;
-            width: 110px;
-            max-height: 80px;
-            object-fit: contain;
+            max-width: 750px;
+            margin: 10px auto 35px;
         }
 
         /* =========================
-           HAMBURGER BUTTON
+            FAQ GRID
         ========================= */
+
+        .faq-container {
+            width: 88%;
+            max-width: 1100px;
+            margin: 0 auto 50px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* =========================
+            FAQ CARDS
+        ========================= */
+
+        .faq-card {
+            background: linear-gradient(145deg, #181818, #0d0d0d);
+            border: 1px solid #292929;
+            border-radius: 12px;
+            padding: 25px 20px;
+            text-align: left;
+            transition: 0.3s ease;
+            min-height: 180px;
+        }
+
+        .faq-card:hover {
+            border-color: #009dff;
+            transform: translateY(-6px);
+            box-shadow:
+                0 0 10px #009dff,
+                0 0 25px #009dff;
+        }
+
+        .faq-card h2 {
+            color: #009dff;
+            font-size: 19px;
+            margin: 0 0 15px;
+            line-height: 1.4;
+        }
+
+        .faq-card p {
+            color: #ccc;
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* =========================
+            CONTACT SECTION
+        ========================= */
+
+        .contact-box {
+            width: 80%;
+            max-width: 850px;
+            margin: 20px auto 60px;
+            padding: 35px 25px;
+
+            background: linear-gradient(145deg, #181818, #0d0d0d);
+            border: 1px solid #009dff;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #009dff;
+        }
+
+        .contact-box h2 {
+            color: #fff;
+            font-size: 27px;
+            margin-top: 0;
+        }
+
+        .contact-box p {
+            color: #ccc;
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 650px;
+            margin: 0 auto 25px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 11px 25px;
+            background-color: #009dff;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: 0.3s ease;
+            box-shadow: 0 0 10px #009dff;
+        }
+
+        .contact-btn:hover {
+            background-color: #009dff;
+            color: #fff;
+            box-shadow:
+                0 0 10px #009dff,
+                0 0 20px #009dff;
+        }
+
+        .tc {
+            color: #fff;
+            font-size: 13px;
+        }
+
+        /* =========================
+            FOOTER
+        ========================= */
+
+        footer {
+            margin-top: 50px;
+            padding: 30px 20px;
+            background-color: #050505;
+            border-top: 2px solid #009dff;
+            box-shadow: 0 -5px 20px #009dff;
+        }
+
+        footer p {
+            color: #aaa;
+            margin-bottom: 18px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: aliceblue;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #009dff;
+        }
+
+        /* =========================
+            HAMBURGER MENU
+            SAME AS OTHER PAGES
+        ========================= */
+
+        .navbar {
+            position: relative;
+        }
 
         .menu-toggle {
             display: none;
@@ -106,8 +226,10 @@
             align-items: center;
             justify-content: center;
             gap: 5px;
+
             width: 44px;
             height: 44px;
+
             background: transparent;
             border: 2px solid #009DFF;
             border-radius: 8px;
@@ -115,6 +237,7 @@
         }
 
         .menu-toggle span {
+            display: block;
             width: 24px;
             height: 3px;
             background: #009DFF;
@@ -136,220 +259,27 @@
         }
 
         /* =========================
-           MENTORS INTRODUCTION
+            TABLET
         ========================= */
 
-        .mentors {
-            text-align: center;
-            padding: 65px 8% 30px;
-        }
+        @media (min-width: 601px) and (max-width: 850px) {
 
-        .mentors h1 {
-            color: #009DFF;
-            font-size: 45px;
-            margin: 0 0 15px;
-        }
-
-        .mentors h2 {
-            color: #009DFF;
-        }
-
-        .mentors > h2:first-of-type {
-            color: #aaa;
-            font-size: 18px;
-            letter-spacing: 2px;
-        }
-
-        .intro-text,
-        .mentor-description {
-            color: #ccc;
-            font-size: 16px;
-            line-height: 1.8;
-            max-width: 850px;
-            margin: 20px auto;
-        }
-
-        .meet-title {
-            font-size: 30px;
-            margin-top: 55px;
-        }
-
-        /* =========================
-           MENTOR GRID
-        ========================= */
-
-        .mentor-grid {
-            display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 25px;
-            max-width: 1250px;
-            margin: 0 auto;
-            padding: 30px 25px 80px;
-        }
-
-        .mentor-card {
-            background: #111;
-            border: 2px solid #009DFF;
-            border-radius: 12px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 0 15px rgba(0,157,255,0.2);
-            transition: transform 0.3s ease,
-                        box-shadow 0.3s ease;
-        }
-
-        .mentor-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 0 25px rgba(0,157,255,0.5);
-        }
-
-        .mentor-card img {
-            width: 100%;
-            height: 210px;
-            object-fit: cover;
-            border-radius: 8px;
-            display: block;
-        }
-
-        .mentor-card h3 {
-            color: #fff;
-            font-size: 20px;
-            margin: 20px 0 10px;
-        }
-
-        .mentor-card p {
-            color: #aaa;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-
-        /* =========================
-           CONTACT SECTION
-        ========================= */
-
-        .contact-section {
-            text-align: center;
-            padding: 50px 20px 80px;
-        }
-
-        .contact-section h2 {
-            color: #009DFF;
-            font-size: 30px;
-        }
-
-        .contact-section p {
-            color: #aaa;
-            font-size: 16px;
-            line-height: 1.8;
-            margin-bottom: 30px;
-        }
-
-        .contact-button {
-            display: inline-block;
-            padding: 15px 35px;
-            background: #009DFF;
-            color: #000;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: 0.3s ease;
-        }
-
-        .contact-button:hover {
-            background: #fff;
-            transform: scale(1.05);
-        }
-
-        /* =========================
-           FOOTER
-        ========================= */
-
-        .footer {
-            background: #000;
-            border-top: 2px solid #009DFF;
-            text-align: center;
-            padding: 35px 20px 20px;
-        }
-
-        .footer-main h3 {
-            color: #009DFF;
-            letter-spacing: 2px;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 22px;
-            margin: 20px 0;
-        }
-
-        .social-icons a {
-            font-size: 21px;
-            text-decoration: none;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin: 25px 0;
-        }
-
-        .footer-links a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .footer-links a:hover {
-            color: #009DFF;
-        }
-
-        .copyright {
-            color: #aaa;
-            font-size: 13px;
-            padding-top: 20px;
-        }
-
-        /* =========================
-           TABLET
-        ========================= */
-
-        @media (min-width: 768px) and (max-width: 1024px) {
-
-            .navbar {
-                gap: 12px;
-                padding: 15px 2%;
-            }
-
-            .nav-links {
-                gap: 12px;
-            }
-
-            .nav-links a {
-                font-size: 12px;
-            }
-
-            .logo img {
-                width: 85px;
-            }
-
-            .mentor-grid {
+            .faq-container {
                 grid-template-columns: repeat(2, 1fr);
             }
+
         }
 
         /* =========================
-           MOBILE
+            MOBILE NAVIGATION
         ========================= */
 
         @media (max-width: 767px) {
 
             .navbar {
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
+                justify-content: space-between;
                 padding: 15px 20px;
                 min-height: 80px;
             }
@@ -379,6 +309,7 @@
                 align-items: stretch;
                 gap: 0;
                 padding: 0;
+                margin: 0;
                 z-index: 1000;
             }
 
@@ -397,6 +328,7 @@
             }
 
             .nav-links li {
+                list-style: none;
                 text-align: center;
             }
 
@@ -410,40 +342,35 @@
                 background: #1b1b1b;
             }
 
-            .mentors {
-                padding: 45px 20px 20px;
-            }
+        }
 
-            .mentors h1 {
+        /* =========================
+            SMALL MOBILE SCREENS
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            .faq-header h1 {
                 font-size: 32px;
             }
 
-            .mentor-grid {
+            .faq-container {
                 grid-template-columns: 1fr;
-                padding: 20px 25px 60px;
+                width: 90%;
             }
 
-            .mentor-card img {
-                height: 240px;
+            .contact-box {
+                width: 82%;
             }
 
-            .contact-section h2 {
-                font-size: 25px;
-            }
-        }
-
-        @media (min-width: 768px) and (max-width: 1100px) {
-            .navbar {
-                gap: 10px;
+            .footer-links {
+                flex-direction: column;
+                gap: 12px;
             }
 
-            .nav-links {
-                gap: 10px;
-            }
         }
 
     </style>
-
 </head>
 
 <body>
@@ -453,37 +380,66 @@
 ========================= -->
 
 <header>
+
     <nav class="navbar" aria-label="Main navigation">
 
+        <!-- LEFT NAVIGATION -->
         <ul class="nav-links nav-left" id="nav-left">
 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Workshops.html">Workshops</a></li>
-            <li><a href="Mentors.html" class="active"
-                   aria-current="page">Mentors</a></li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="Workshops.html">Workshops</a>
+            </li>
+
+            <li>
+                <a href="Mentors.html">Mentors</a>
+            </li>
 
         </ul>
 
-        <a href="home.html" class="logo">
-            <img src="/images/NEXTGEN2.png"
+        <!-- CENTRED LOGO -->
+        <a href="index.html" class="logo">
+
+            <img src="NEXTGEN2.png"
                  alt="NextGen Cyber Logo">
+
         </a>
 
+        <!-- RIGHT NAVIGATION -->
         <ul class="nav-links nav-right" id="nav-right">
 
-            <li><a href="SuccessStories.html">Success Stories</a></li>
-            <li><a href="FAQ.html">FAQ</a></li>
-            <li><a href="Contact.html">Contact</a></li>
+            <li>
+                <a href="SuccessStories.html">
+                    Success Stories
+                </a>
+            </li>
+
+            <li>
+                <a href="FAQ.html"
+                   class="active"
+                   aria-current="page">
+                    FAQ
+                </a>
+            </li>
+
+            <li>
+                <a href="Contact.html">
+                    Contact
+                </a>
+            </li>
 
         </ul>
 
-        <!-- HAMBURGER BUTTON -->
-
-        <button class="menu-toggle"
-                type="button"
-                aria-label="Toggle navigation menu"
-                aria-expanded="false"
-                aria-controls="nav-left nav-right">
+        <!-- HAMBURGER MENU -->
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-left nav-right">
 
             <span></span>
             <span></span>
@@ -492,148 +448,153 @@
         </button>
 
     </nav>
+
 </header>
 
 
 <!-- =========================
-     MENTORS INTRODUCTION
+     FAQ HEADER
 ========================= -->
 
-<main>
+<section class="faq-header">
 
-    <section class="mentors">
+    <h1>Frequently Asked Questions</h1>
 
-        <h1>Mentors</h1>
+    <br>
 
-        <h2>LEARN. GUIDE. INSPIRE.</h2>
+    <p>
+        Find quick answers to common questions about
+        NextGen Cyber Skills Hub, our workshops
+        and learning opportunities.
+    </p>
 
-        <p class="intro-text">
-            Explore our mentors below and discover the people
-            helping the next generation of cybersecurity
-            professionals learn, develop and succeed.
-        </p>
+    <br>
 
-        <h2 class="meet-title">Meet Our Mentors</h2>
+    <p class="faq-intro">
+        If you cannot find the answer you are looking for,
+        our team is always happy to help.
+    </p>
 
-        <p class="mentor-description">
-            Our mentors bring knowledge, experience and a
-            passion for cybersecurity to NextGen Cyber Skills Hub.
-            They are here to guide learners, share practical
-            advice and help build the skills needed for a future
-            in the digital world.
-            <br><br>
-            Whether you are just starting your cybersecurity
-            journey or looking to strengthen your existing skills,
-            our mentors provide support, guidance and real-world
-            insights to help you grow with confidence.
-        </p>
-
-    </section>
+</section>
 
 
-    <!-- =========================
-         MENTOR GRID
-    ========================= -->
+<!-- =========================
+     FAQ CARDS
+========================= -->
 
-    <section class="mentor-grid" aria-label="Our mentors">
+<section class="faq-container">
 
-        <article class="mentor-card">
-            <img src="/images/MENTOR 5.jpg" alt="Maya Ellis">
-            <h3>Maya Ellis</h3>
-            <p>Penetration Tester</p>
-        </article>
+    <!-- FAQ 1 -->
+    <article class="faq-card">
 
-        <article class="mentor-card">
-            <img src="/images/MENTOR 8.jpg" alt="Andy James">
-            <h3>Andy James</h3>
-            <p>SOC Analyst</p>
-        </article>
-
-        <article class="mentor-card">
-            <img src="/images/MENTOR 9.jpg" alt="Ava Brooks">
-            <h3>Ava Brooks</h3>
-            <p>Incident Responder</p>
-        </article>
-
-        <article class="mentor-card">
-            <img src="/images/MENTOR 10.jpg" alt="Cloe Grant">
-            <h3>Cloe Grant</h3>
-            <p>Cloud Security Engineer</p>
-        </article>
-
-        <article class="mentor-card">
-            <img src="/images/MENTOR 11.jpg" alt="Zara Vale">
-            <h3>Zara Vale</h3>
-            <p>AI Security Specialist</p>
-        </article>
-
-        <article class="mentor-card">
-            <img src="/images/MENTOR 7.jpg" alt="Ethan Hayes">
-            <h3>Ethan Hayes</h3>
-            <p>Marketing Coordinator</p>
-        </article>
-
-        <article class="mentor-card">
-            <img src="/images/MENTOR 2.jpg" alt="Caleb Morgan">
-            <h3>Caleb Morgan</h3>
-            <p>Threat Hunter</p>
-        </article>
-
-        <article class="mentor-card">
-            <img src="/images/MENTOR 1.jpg" alt="Lila Carter">
-            <h3>Lila Carter</h3>
-            <p>Cyber Security Compliance Analyst</p>
-        </article>
-
-        <article class="mentor-card">
-            <img src="/images/MENTOR 13.jpg" alt="Ryan Blake">
-            <h3>Ryan Blake</h3>
-            <p>Identity and Access Management Engineer</p>
-        </article>
-
-        <article class="mentor-card">
-            <img src="/images/MENTOR 4.jpg" alt="Noah Reed">
-            <h3>Noah Reed</h3>
-            <p>Application Security Engineer</p>
-        </article>
-
-        <article class="mentor-card">
-            <img src="/images/MENTOR 6.jpg" alt="Fiona Williams">
-            <h3>Fiona Williams</h3>
-            <p>Cybersecurity Specialist</p>
-        </article>
-
-        <article class="mentor-card">
-            <img src="/images/MENTOR12.jpg" alt="Isaac Bennet">
-            <h3>Isaac Bennet</h3>
-            <p>Cybersecurity Training Specialist</p>
-        </article>
-
-    </section>
-
-
-    <!-- =========================
-         CONTACT SECTION
-    ========================= -->
-
-    <section class="contact-section">
-
-        <h2>Contact The Mentor For You!</h2>
+        <h2>What is NextGen Cyber Skills Hub?</h2>
 
         <p>
-            Couldn't find the answer you were looking for?
-            <br>
-            Get in touch with the NextGen Cyber team and
-            send us your question or message.
+            NextGen Cyber Skills Hub helps learners develop
+            practical cybersecurity knowledge and
+            future-ready digital skills.
         </p>
 
-        <a href="Contact.html" class="contact-button">
-            Contact Us
-        </a>
+    </article>
 
-    </section>
 
-</main>
+    <!-- FAQ 2 -->
+    <article class="faq-card">
+
+        <h2>Who can attend the workshops?</h2>
+
+        <p>
+            Our workshops are designed for learners interested
+            in developing their cybersecurity knowledge
+            and practical skills.
+        </p>
+
+    </article>
+
+
+    <!-- FAQ 3 -->
+    <article class="faq-card">
+
+        <h2>Do I need cybersecurity experience?</h2>
+
+        <p>
+            No. Our workshops cover different topics
+            and skill levels, allowing learners to
+            find sessions suited to their needs.
+        </p>
+
+    </article>
+
+
+    <!-- FAQ 4 -->
+    <article class="faq-card">
+
+        <h2>Are workshops available online?</h2>
+
+        <p>
+            Yes. NextGen Cyber offers online workshops
+            as well as in-person sessions.
+        </p>
+
+    </article>
+
+
+    <!-- FAQ 5 -->
+    <article class="faq-card">
+
+        <h2>How do I book a workshop?</h2>
+
+        <p>
+            Select the Book Now button on the Workshops
+            page. You can also contact us if you
+            need more information.
+        </p>
+
+    </article>
+
+
+    <!-- FAQ 6 -->
+    <article class="faq-card">
+
+        <h2>Can I contact a mentor?</h2>
+
+        <p>
+            If you have a question about a workshop
+            or learning opportunity, you can send
+            us a message through the Contact page.
+        </p>
+
+    </article>
+
+</section>
+
+
+<!-- =========================
+     CONTACT SECTION
+========================= -->
+
+<section class="contact-box">
+
+    <h2>Still Have a Question?</h2>
+
+    <p>
+        Couldn't find the answer you were looking for?
+        Get in touch with the NextGen Cyber team and
+        send us your question or message.
+    </p>
+
+    <a href="Contact.html" class="contact-btn">
+        Contact Us
+    </a>
+
+    <br>
+    <br>
+
+    <a href="t&c.html" class="tc">
+        Terms &amp; Conditions
+    </a>
+
+</section>
 
 
 <!-- =========================
@@ -670,8 +631,7 @@
 
         </div>
 
-        <nav class="footer-links"
-             aria-label="Footer navigation">
+        <nav class="footer-links" aria-label="Footer navigation">
 
             <a href="index.html">Home</a>
             <a href="Workshops.html">Workshops</a>
@@ -692,17 +652,25 @@
 
 
 <!-- =========================
-     MOBILE MENU JAVASCRIPT
+     HAMBURGER JAVASCRIPT
 ========================= -->
 
 <script>
+document.addEventListener("DOMContentLoaded", function () {
+
     const menuButton = document.querySelector(".menu-toggle");
     const navLeft = document.querySelector(".nav-left");
     const navRight = document.querySelector(".nav-right");
 
+    if (!menuButton || !navLeft || !navRight) {
+        return;
+    }
+
     function closeMobileMenu() {
+
         navLeft.classList.remove("menu-open");
         navRight.classList.remove("menu-open");
+
         menuButton.setAttribute("aria-expanded", "false");
     }
 
@@ -722,14 +690,20 @@
     });
 
     window.addEventListener("resize", function () {
+
         if (window.innerWidth >= 768) {
             closeMobileMenu();
         }
+
     });
 
-    document.querySelectorAll(".nav-links a").forEach(function(link) {
+    document.querySelectorAll(".nav-links a").forEach(function (link) {
+
         link.addEventListener("click", closeMobileMenu);
+
     });
+
+});
 </script>
 
 </body>
